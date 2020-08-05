@@ -1,0 +1,38 @@
+{
+  "name": "react-ssr-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:server dev:build:*",
+    "dev:server": "nodemon --inspect build/bundle.js",
+    "dev:build:server": "webpack --config webpack.server.js --watch",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Heshiyu1996/react-ssr-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Heshiyu1996/react-ssr-demo/issues"
+  },
+  "homepage": "https://github.com/Heshiyu1996/react-ssr-demo#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-node-externals": "^2.5.0"
+  }
+}
